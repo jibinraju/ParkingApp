@@ -9,7 +9,6 @@
 import Foundation
 
 class DeleteUserResponseProcessor: ResponseProcessor {
-    
     override func didFinishReceivingData() {
         if receviedDataLenght == 0 {
             let error = NSError.init(domain: Constants.Errors.Domain.Name, code: Constants.Errors.Code.InValidObject)

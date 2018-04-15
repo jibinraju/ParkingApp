@@ -9,7 +9,6 @@
 import Foundation
 
 class CreateUserResponseProcessor: ResponseProcessor {
-    
     override func processResponse(response: Any) {
         guard let newUserInformation = response as? Dictionary<String, String> else {
             let error = NSError.init(domain: Constants.Errors.Domain.Name, code: Constants.Errors.Code.InValidObject)
@@ -23,7 +22,6 @@ class CreateUserResponseProcessor: ResponseProcessor {
             completionCallBack?(nil, error)
             return
         }
-        
         super.processResponse(response: newUserID!)
     }
 }

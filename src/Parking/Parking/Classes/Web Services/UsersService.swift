@@ -9,7 +9,6 @@
 import Foundation
 
 class UsersService: Service {
-
     override var requestURL: String! {
         return super.requestURL! + Constants.HTTP.Url.UsersPath
     }

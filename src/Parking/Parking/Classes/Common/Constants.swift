@@ -29,6 +29,7 @@ struct Constants {
             static let UsersPath = "users.json"
             static let UserDeletePath = "users/%@.json"
             static let ParkingZonesPath = "parkingZones.json"
+            static let VehiclesPath = "vehicles.json"
         }
         
         struct HeaderKey {

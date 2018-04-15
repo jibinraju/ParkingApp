@@ -9,7 +9,6 @@
 import Foundation
 
 class UsersResponseProcessor: ResponseProcessor {
-
     override func processResponse(response: Any) {
         guard let userList = response as? Dictionary<String, Dictionary<String, String>> else {
             let error = NSError.init(domain: Constants.Errors.Domain.Name, code: Constants.Errors.Code.InValidObject)
@@ -17,9 +16,9 @@ class UsersResponseProcessor: ResponseProcessor {
             return
         }
         
-        var users = Array<User>.init()
+        var users = Array<User>()
         for (key, value) in userList {
-            let user = User.init(data: [key: value])
+            let user = User(data: [key: value])
             users.append(user)
         }
         super.processResponse(response: users)

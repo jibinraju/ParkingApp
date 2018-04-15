@@ -30,7 +30,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,6 +208,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0Y-LT-I0S">
                                 <rect key="frame" x="132" y="637.33333333333337" width="150" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onTouchStartStop:" destination="myh-yJ-SDA" eventType="touchUpInside" id="4L2-IK-HyP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -237,6 +240,7 @@
                         <outlet property="parkingZonesMap" destination="VZd-gS-JVP" id="CCR-rt-DYR"/>
                         <outlet property="selectedZoneLabel" destination="iHj-J0-9Su" id="gkB-gm-avh"/>
                         <outlet property="selectedZoneTextLable" destination="McL-Zx-Jjx" id="g7Z-GP-JMo"/>
+                        <outlet property="startStopParkingButton" destination="i0Y-LT-I0S" id="mWE-vX-9vL"/>
                         <outlet property="vehicleLabel" destination="rnb-0A-brE" id="es0-Qz-MjW"/>
                         <outlet property="vehicleTextLabel" destination="0QU-db-ntx" id="AQh-TP-KMb"/>
                     </connections>

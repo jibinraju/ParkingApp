@@ -16,7 +16,7 @@
 		A63598D7207E600E001A29E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63598D5207E600E001A29E3 /* Main.storyboard */; };
 		A63598D9207E600F001A29E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63598D8207E600F001A29E3 /* Assets.xcassets */; };
 		A63598DC207E600F001A29E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63598DA207E600F001A29E3 /* LaunchScreen.storyboard */; };
-		A63598E7207E600F001A29E3 /* ParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63598E6207E600F001A29E3 /* ParkingTests.swift */; };
+		A63598E7207E600F001A29E3 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63598E6207E600F001A29E3 /* LoginViewControllerTests.swift */; };
 		A640A2EC2081D19100F7F6CA /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A2EB2081D19100F7F6CA /* NewUserViewController.swift */; };
 		A640A2EE2081D34D00F7F6CA /* UIViewController+Convenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A2ED2081D34D00F7F6CA /* UIViewController+Convenient.swift */; };
 		A640A2F02081DAB200F7F6CA /* NewUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A2EF2081DAB200F7F6CA /* NewUserViewModel.swift */; };
@@ -32,6 +32,12 @@
 		A640A30720833B4D00F7F6CA /* ParkingZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A30620833B4D00F7F6CA /* ParkingZone.swift */; };
 		A640A30920833E3600F7F6CA /* ParkingZonesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A30820833E3600F7F6CA /* ParkingZonesService.swift */; };
 		A640A30B20833E6000F7F6CA /* ParkingZonesResponseProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A30A20833E6000F7F6CA /* ParkingZonesResponseProcessor.swift */; };
+		A640A30D20838B3C00F7F6CA /* ParkingZoneAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A30C20838B3C00F7F6CA /* ParkingZoneAnnotation.swift */; };
+		A640A30F2083A4BF00F7F6CA /* VehiclesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A30E2083A4BF00F7F6CA /* VehiclesService.swift */; };
+		A640A3112083A4EE00F7F6CA /* VehiclesResponseProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A3102083A4EE00F7F6CA /* VehiclesResponseProcessor.swift */; };
+		A640A3132083A53D00F7F6CA /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A3122083A53D00F7F6CA /* Vehicle.swift */; };
+		A640A3162083D15500F7F6CA /* Array+Convenient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640A3152083D15500F7F6CA /* Array+Convenient.swift */; };
+		A6DD4C642083EC37008E93C2 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DD4C632083EC37008E93C2 /* LoginViewModelTests.swift */; };
 		A6F86CDF2080739700F9DCB0 /* ResponseProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F86CDE2080739700F9DCB0 /* ResponseProcessor.swift */; };
 		A6F86CE12080B8CB00F9DCB0 /* UsersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F86CE02080B8CB00F9DCB0 /* UsersService.swift */; };
 		A6F86CE32080BEBA00F9DCB0 /* ServiceQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F86CE22080BEBA00F9DCB0 /* ServiceQueue.swift */; };
@@ -66,7 +72,7 @@
 		A63598DB207E600F001A29E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A63598DD207E600F001A29E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A63598E2207E600F001A29E3 /* ParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A63598E6207E600F001A29E3 /* ParkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTests.swift; sourceTree = "<group>"; };
+		A63598E6207E600F001A29E3 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		A63598E8207E600F001A29E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A640A2EB2081D19100F7F6CA /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 		A640A2ED2081D34D00F7F6CA /* UIViewController+Convenient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Convenient.swift"; sourceTree = "<group>"; };
@@ -83,12 +89,18 @@
 		A640A30620833B4D00F7F6CA /* ParkingZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingZone.swift; sourceTree = "<group>"; };
 		A640A30820833E3600F7F6CA /* ParkingZonesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingZonesService.swift; sourceTree = "<group>"; };
 		A640A30A20833E6000F7F6CA /* ParkingZonesResponseProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingZonesResponseProcessor.swift; sourceTree = "<group>"; };
+		A640A30C20838B3C00F7F6CA /* ParkingZoneAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingZoneAnnotation.swift; sourceTree = "<group>"; };
+		A640A30E2083A4BF00F7F6CA /* VehiclesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesService.swift; sourceTree = "<group>"; };
+		A640A3102083A4EE00F7F6CA /* VehiclesResponseProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesResponseProcessor.swift; sourceTree = "<group>"; };
+		A640A3122083A53D00F7F6CA /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		A640A3152083D15500F7F6CA /* Array+Convenient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Convenient.swift"; sourceTree = "<group>"; };
+		A640A3172083E1FB00F7F6CA /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		A6DD4C632083EC37008E93C2 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		A6F86CDE2080739700F9DCB0 /* ResponseProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProcessor.swift; sourceTree = "<group>"; };
 		A6F86CE02080B8CB00F9DCB0 /* UsersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersService.swift; sourceTree = "<group>"; };
 		A6F86CE22080BEBA00F9DCB0 /* ServiceQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceQueue.swift; sourceTree = "<group>"; };
 		A6F86CE52080C55F00F9DCB0 /* UsersResponseProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponseProcessor.swift; sourceTree = "<group>"; };
 		A6F86CE72080DAA500F9DCB0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		A6F86CE92080DAD500F9DCB0 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		A6F86CEA2080DB8C00F9DCB0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A6F86CEC2080DDB800F9DCB0 /* LoginDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataSource.swift; sourceTree = "<group>"; };
 		A6F86CEF2080E52500F9DCB0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -124,6 +136,7 @@
 				A640A2F1208221F300F7F6CA /* CreateUserService.swift */,
 				A640A2F520828D1E00F7F6CA /* DeleteUserService.swift */,
 				A640A30820833E3600F7F6CA /* ParkingZonesService.swift */,
+				A640A30E2083A4BF00F7F6CA /* VehiclesService.swift */,
 			);
 			path = "Web Services";
 			sourceTree = "<group>";
@@ -137,6 +150,7 @@
 				A640A2F320822F6700F7F6CA /* CreateUserResponseProcessor.swift */,
 				A640A2F720828D5A00F7F6CA /* DeleteUserResponseProcessor.swift */,
 				A640A30A20833E6000F7F6CA /* ParkingZonesResponseProcessor.swift */,
+				A640A3102083A4EE00F7F6CA /* VehiclesResponseProcessor.swift */,
 			);
 			path = "Response Processors";
 			sourceTree = "<group>";
@@ -144,6 +158,7 @@
 		A63598C5207E600E001A29E3 = {
 			isa = PBXGroup;
 			children = (
+				A640A3172083E1FB00F7F6CA /* ReadMe.md */,
 				A63598D0207E600E001A29E3 /* Parking */,
 				A63598E5207E600F001A29E3 /* ParkingTests */,
 				A63598CF207E600E001A29E3 /* Products */,
@@ -163,7 +178,6 @@
 		A63598D0207E600E001A29E3 /* Parking */ = {
 			isa = PBXGroup;
 			children = (
-				A6F86CE92080DAD500F9DCB0 /* ReadMe.md */,
 				A63598F1207E603C001A29E3 /* Classes */,
 				A63598F8207E6044001A29E3 /* Resources */,
 				A63598DD207E600F001A29E3 /* Info.plist */,
@@ -175,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				A63598FB207E604E001A29E3 /* Classes */,
-				A63598E6207E600F001A29E3 /* ParkingTests.swift */,
 				A63598E8207E600F001A29E3 /* Info.plist */,
 			);
 			path = ParkingTests;
@@ -184,14 +197,14 @@
 		A63598F1207E603C001A29E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A63598D1207E600E001A29E3 /* AppDelegate.swift */,
+				A63598F6207E603C001A29E3 /* UILayer */,
+				A63598F5207E603C001A29E3 /* Handlers */,
+				A63598F4207E603C001A29E3 /* DataLayer */,
 				A614665B207F2C8F00AB414A /* Response Processors */,
 				A614665A207F2C8000AB414A /* Web Services */,
-				A63598D1207E600E001A29E3 /* AppDelegate.swift */,
 				A63598F2207E603C001A29E3 /* Others */,
 				A63598F3207E603C001A29E3 /* Common */,
-				A63598F4207E603C001A29E3 /* DataLayer */,
-				A63598F5207E603C001A29E3 /* Handlers */,
-				A63598F6207E603C001A29E3 /* UILayer */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -199,6 +212,7 @@
 		A63598F2207E603C001A29E3 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				A640A3142083D11100F7F6CA /* Categories */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -276,11 +290,11 @@
 		A63598FB207E604E001A29E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A6359900207E604E001A29E3 /* UILayer */,
+				A63598FF207E604E001A29E3 /* Handlers */,
+				A63598FE207E604E001A29E3 /* DataLayer */,
 				A63598FC207E604E001A29E3 /* Others */,
 				A63598FD207E604E001A29E3 /* Common */,
-				A63598FE207E604E001A29E3 /* DataLayer */,
-				A63598FF207E604E001A29E3 /* Handlers */,
-				A6359900207E604E001A29E3 /* UILayer */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -324,6 +338,7 @@
 		A6359901207E604E001A29E3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A6DD4C622083EA39008E93C2 /* Login */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -353,6 +368,7 @@
 				A640A2FA20830FE100F7F6CA /* ParkingViewController.swift */,
 				A640A2FC2083101C00F7F6CA /* ParkingViewModel.swift */,
 				A640A2FE20831CC900F7F6CA /* ParkingViewDataSource.swift */,
+				A640A30C20838B3C00F7F6CA /* ParkingZoneAnnotation.swift */,
 			);
 			path = Parking;
 			sourceTree = "<group>";
@@ -373,11 +389,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A640A3142083D11100F7F6CA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A640A3152083D15500F7F6CA /* Array+Convenient.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A6DD4C622083EA39008E93C2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A63598E6207E600F001A29E3 /* LoginViewControllerTests.swift */,
+				A6DD4C632083EC37008E93C2 /* LoginViewModelTests.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		A6F86CEE2080E50200F9DCB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				A6F86CEF2080E52500F9DCB0 /* User.swift */,
 				A640A30620833B4D00F7F6CA /* ParkingZone.swift */,
+				A640A3122083A53D00F7F6CA /* Vehicle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -506,8 +540,10 @@
 				A6F86CE82080DAA500F9DCB0 /* LoginViewModel.swift in Sources */,
 				A640A2FD2083101C00F7F6CA /* ParkingViewModel.swift in Sources */,
 				A6146660207F33A200AB414A /* Service.swift in Sources */,
+				A640A3132083A53D00F7F6CA /* Vehicle.swift in Sources */,
 				A6F86CED2080DDB800F9DCB0 /* LoginDataSource.swift in Sources */,
 				A640A2F420822F6700F7F6CA /* CreateUserResponseProcessor.swift in Sources */,
+				A640A30F2083A4BF00F7F6CA /* VehiclesService.swift in Sources */,
 				A63598D2207E600E001A29E3 /* AppDelegate.swift in Sources */,
 				A640A2F2208221F300F7F6CA /* CreateUserService.swift in Sources */,
 				A640A2EE2081D34D00F7F6CA /* UIViewController+Convenient.swift in Sources */,
@@ -521,11 +557,14 @@
 				A640A30B20833E6000F7F6CA /* ParkingZonesResponseProcessor.swift in Sources */,
 				A6F86CE62080C55F00F9DCB0 /* UsersResponseProcessor.swift in Sources */,
 				A6146664207F4D9200AB414A /* Constants.swift in Sources */,
+				A640A30D20838B3C00F7F6CA /* ParkingZoneAnnotation.swift in Sources */,
 				A640A2F02081DAB200F7F6CA /* NewUserViewModel.swift in Sources */,
 				A640A30920833E3600F7F6CA /* ParkingZonesService.swift in Sources */,
 				A640A30220831D6A00F7F6CA /* LocationManagerHandler.swift in Sources */,
 				A640A30720833B4D00F7F6CA /* ParkingZone.swift in Sources */,
 				A6F86CF420814B6B00F9DCB0 /* UIAlertController+Custom.swift in Sources */,
+				A640A3162083D15500F7F6CA /* Array+Convenient.swift in Sources */,
+				A640A3112083A4EE00F7F6CA /* VehiclesResponseProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +572,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A63598E7207E600F001A29E3 /* ParkingTests.swift in Sources */,
+				A6DD4C642083EC37008E93C2 /* LoginViewModelTests.swift in Sources */,
+				A63598E7207E600F001A29E3 /* LoginViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

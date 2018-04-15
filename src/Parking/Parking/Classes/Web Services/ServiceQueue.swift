@@ -10,7 +10,6 @@ import UIKit
 
 class ServiceQueue: OperationQueue {
     // MARK: - Properties
-    
     private static var sharedServiceQueue: ServiceQueue = {
         return ServiceQueue()
     }()

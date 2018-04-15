@@ -63,7 +63,7 @@ class LoginViewController: UIViewController {
         loadingAlertController = showLoadingAlert(loadingMessage: viewModel.dataLoadingMessage)
         userListService = UsersService()
         userListService.fetch { (users, error) in
-            self.loadingAlertController.dismiss(animated: false, completion: nil)
+            self.loadingAlertController.dismiss(animated: true, completion: nil)
             if error != nil {
                 self.showMessageAlert(message: self.viewModel.localizedUserListErrorMessage)
                 return

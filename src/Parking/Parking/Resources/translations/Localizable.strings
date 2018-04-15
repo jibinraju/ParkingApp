@@ -27,4 +27,10 @@
 "Parking_Screen_Title" = "Parking";
 "Parking_Selected_Zone_Text" = "Selected Zone";
 "Parking_Vehicel_Name_Text" = "Vehicel";
+"Failed_Retrieve_Parking_Zones" = "Failed to retrive parking zones, please try again";
+"Start_Parking_Button_Text" = "Start Parking";
+"Stop_Parking_Button_Text" = "Stop Parking";
+"Failed_Retrieve_Vehicles" = "Failed to retrive vehicles, please try again";
+"User_Have_No_Vehicle" = "User does not have any vehicle, please add vechicle";
+
 
