@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  Parking
+
+  Created by Jibin Raju on 13/04/2018.
+  Copyright © 2018 Jibin Raju. All rights reserved.
+*/
+"App_Name" = "Parking";
+"OK" = "OK";
+"User_Screen_Title" = "Login";
+"New_User_Button_Title" = "New User";
+"User_List_Error" = "Failed to retrive user list, please restart the app";
+"NewUser_Screen_Title" = "New User";
+"First_Name_Text" = "First Name";
+"Last_Name_Text" = "Last Name";
+"User_Name_Text" = "User Name";
+"First_Name_Text_Placeholder" = "Please enter the first name";
+"Last_Name_Text_Placeholder" = "Please enter the last name";
+"User_Name_Text_Placeholder" = "Please enter the user name";
+"Create_New_User" = "Create New User";
+"Empty_Message_Warning" = "Please enter valid text in the field";
+"Creating_User_Process_Message" = "Creating New User, Please wait...";
+"Failed_Create_New_User_Error_Message" = "Failed to create new user, please re-try";
+"Loading" = "Loading...";
+"Unable_To_Delete" = "User does not have valid user id";
+"Failed_Delete_User" = "Failed to delete user, please try again";
+"Parking_Screen_Title" = "Parking";
+"Parking_Selected_Zone_Text" = "Selected Zone";
+"Parking_Vehicel_Name_Text" = "Vehicel";
+

@@ -1,0 +1,296 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ParkNow",
+		"_postman_id": "46729065-65c2-639d-f154-e399bf0ab564",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SearchZones",
+			"request": {
+				"url": {
+					"raw": "{{baseURL}}/api/search/zones?supplierid=349&lat=50.962205&maxresults=5&lon=6.958&radius=5",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"search",
+						"zones"
+					],
+					"query": [
+						{
+							"key": "supplierid",
+							"value": "349",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lat",
+							"value": "50.962205",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "maxresults",
+							"value": "5",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lon",
+							"value": "6.958",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "radius",
+							"value": "5",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZXVnZW5lLmJyYWdpbmV0c0BwYXJrbW9iaWxlLmNvbTpNazc2NjA2NTAz",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "X-Atlassian-Token",
+						"value": "nocheck",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\"fields\": {\"customfield_12505\" : 999}}"
+				},
+				"description": "Koln"
+			},
+			"response": []
+		},
+		{
+			"name": "Get zone",
+			"request": {
+				"url": "{{baseURL}}/api/parking/zone/500007/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZXVnZW5lLmJyYWdpbmV0c0BwYXJrbW9iaWxlLmNvbTpNazc2NjA2NTAz",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "X-Atlassian-Token",
+						"value": "nocheck",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\"fields\": {\"customfield_12505\" : 999}}"
+				},
+				"description": "Koln"
+			},
+			"response": []
+		},
+		{
+			"name": "Active Parking Actions",
+			"request": {
+				"url": "http://parknow.preprod.parkmobile.nl/api/parking/active",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZXVnZW5lLmJyYWdpbmV0c0BwYXJrbW9iaWxlLmNvbTpNazc2NjA2NTAz",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "X-Atlassian-Token",
+						"value": "nocheck",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "PMAuthenticationToken",
+						"value": "09ecfa3e-32ee-4d98-b938-56003d6b6c6f",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\"fields\": {\"customfield_12505\" : 999}}"
+				},
+				"description": "Koln"
+			},
+			"response": []
+		},
+		{
+			"name": "Active Parking Actions copy",
+			"request": {
+				"url": "http://parknow.preprod.parkmobile.nl/api/parking/active",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZXVnZW5lLmJyYWdpbmV0c0BwYXJrbW9iaWxlLmNvbTpNazc2NjA2NTAz",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "X-Atlassian-Token",
+						"value": "nocheck",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "PMAuthenticationToken",
+						"value": "09ecfa3e-32ee-4d98-b938-56003d6b6c6f",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"InternalZoneCode\":\"500002\",\"parkingDetails\":{\"fields\":[{\"name\":\"ZoneLocationLon\",\"value\":6.959801},{\"name\":\"ZoneLocationLat\",\"value\":50.937513},{\"name\":\"ZoneLocationName\",\"value\":\"Seidmacherinnengäßchen\"},{\"name\":\"ActivationSource\",\"value\":\"IPHONE v3.5.0\"},{\"name\":\"ActivationMethod\",\"value\":1},{\"name\":\"Lat\",\"value\":50.937513},{\"name\":\"Lon\",\"value\":6.959801}]},\"VehicleId\":202817}"
+				},
+				"description": "Koln"
+			},
+			"response": []
+		},
+		{
+			"name": "Token Refresh",
+			"request": {
+				"url": {
+					"raw": "{{baseURL}}/api/token/refresh?supplierId=349",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"token",
+						"refresh"
+					],
+					"query": [
+						{
+							"key": "supplierId",
+							"value": "349",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"RefreshToken\":\"bc864f28-9a7e-47d8-a341-120b74f2b5de\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete token",
+			"request": {
+				"url": {
+					"raw": "{{baseURL}}/api/token?supplierid=349",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"token"
+					],
+					"query": [
+						{
+							"key": "supplierid",
+							"value": "349",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "PMAuthenticationToken",
+						"value": "c9ba4c01-6fc2-4835-84ea-9f19b0c82950",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\"fields\": {\"customfield_12505\" : 999}}"
+				},
+				"description": "Koln"
+			},
+			"response": []
+		},
+		{
+			"name": "AppleWatch GetAll",
+			"request": {
+				"url": "http://watch.sboulema.nl/refresh/bc864f28-9a7e-47d8-a341-120b74f2b5de/50.93847/7.00743",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AppleWatch GetAll (with access token)",
+			"request": {
+				"url": "http://watch.sboulema.nl/access/d29ac098-5ad9-4032-9c54-6ea9b5bbf96a/50.93847/7.00743",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
